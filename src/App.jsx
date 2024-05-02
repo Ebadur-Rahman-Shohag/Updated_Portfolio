@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import BlogSection from "./components/BlogSection";
 import Contact from "./components/Contact";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Skills />
       <About />
       <Projects />
+      <BlogSection/>
       <Contact />
       <Footer />
     </>

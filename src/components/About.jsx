@@ -7,7 +7,7 @@ const About = () => {
         <img src={aboutSvg} className="w-full h-64" />
         <article>
           <SectionTitle text="About Me" />
-          <p className="text-slate-400 mt-8 leading-loose">
+          <p className="text-slate-500 mt-8 leading-loose">
             Passionate frontend developer proficient in JavaScript and React,
             dedicated to creating engaging and seamless user experiences. With a
             keen eye for design and a commitment to clean, efficient code, I

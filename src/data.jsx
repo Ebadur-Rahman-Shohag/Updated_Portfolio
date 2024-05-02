@@ -57,7 +57,7 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: "https://i.ibb.co/QCtmCPG/guess-the-number.png", 
+    img: "https://i.ibb.co/QCtmCPG/guess-the-number.png",
     url: "https://guess-the-number-roan.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Guess-the-number",
     title: "Guess the number",
@@ -71,5 +71,40 @@ export const projects = [
     github: "https://github.com/Ebadur-Rahman-Shohag/Get-Images-From-Api",
     title: "Image Search Engine",
     text: "This is simple React application users can search their favorite images. The images will show in gallery form.",
+  },
+];
+
+export const blogPosts = [
+  {
+    id: nanoid(),
+    title: "Article Title 1",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
+    imageUrl: "https://i.ibb.co/bH9t37d/Worldwise.png",
+    authorImg:"https://i.ibb.co/bH9t37d/Worldwise.png",
+    readTime: "7",
+  },
+  {
+    id: nanoid(),
+    title: "Article Title 2",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
+    imageUrl: "./images/project-2.jpeg",
+    authorImg: "https://i.ibb.co/bH9t37d/Worldwise.png",
+    readTime: "7",
+  },
+  {
+    id: nanoid(),
+    title: "Article Title 3",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
+    imageUrl: "./images/project-3.jpeg",
+    authorImg: "./images/hero-img-small.jpeg",
+    readTime: "7",
+  },
+  {
+    id: nanoid(),
+    title: "Article Title 4",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
+    imageUrl: "./images/project-4.jpeg",
+    authorImg: "./images/hero-img-small.jpeg",
+    readTime: "7",
   },
 ];

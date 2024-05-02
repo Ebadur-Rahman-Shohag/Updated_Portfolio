@@ -96,7 +96,7 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="max-w-md mx-auto my-8">
+    <div id="contact" className=" max-w-md mx-auto my-8">
       <h1 className="border-b pb-5 text-3xl font-semibold text-center mb-4">
         Get in Touch
       </h1>
