@@ -1,5 +1,6 @@
 import { nanoid } from "nanoid";
-import { FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { FaHtml5, FaJs, FaNode, FaReact } from "react-icons/fa";
+import { SiMongodb,SiTailwindcss } from "react-icons/si";
 
 export const links = [
   { id: nanoid(), href: "#", text: "home" },
@@ -16,6 +17,13 @@ export const skills = [
     icon: <FaHtml5 className="h-16 w-16 text-emerald-500" />,
     text: "Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences.",
   },
+   
+  {
+    id: nanoid(),
+    title: "Tailwind CSS",
+    icon: <SiTailwindcss className="h-16 w-16 text-emerald-500" />,
+    text: "Highly skilled in Tailwind, adeptly crafting visually appealing and responsive websites for optimal user experiences.",
+  },
   {
     id: nanoid(),
     title: "Javascript",
@@ -28,6 +36,18 @@ export const skills = [
     icon: <FaReact className="h-16 w-16 text-emerald-500" />,
     text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
   },
+  {
+    id: nanoid(),
+    title: "Node",
+    icon: <FaNode className="h-16 w-16 text-emerald-500" />,
+    text: "Proficient in Node.js, experienced in developing efficient and interactive back-end applications with a strong focus on modular design and reusable components.",
+  },
+  {
+    id: nanoid(),
+    title: "MongoDB",
+    icon: <SiMongodb className="h-16 w-16 text-emerald-500" />,
+    text: "Proficient in MongoDB, experienced in designing efficient and scalable database solutions with a strong focus on performance optimization and flexible schema design.",
+  },
 ];
 
 export const projects = [
@@ -37,7 +57,7 @@ export const projects = [
     url: "https://comfy-ten.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Comfy",
     title: "comfy store",
-    text: "This is an E-Commerce web application where user can order furniture. This application requires user account and login and payments are made on delivery. User can also explore the web application by demo log in. Users can see their data in order page. Also this application has filtering method and dark mode.",
+    text: "This is an E-Commerce web application where users can order furniture. This application requires a user account and login and payments are made on delivery. Users can also explore the web application by demo log in. Users can see their data in the order page. Also this application has a filtering method and dark mode.",
   },
   {
     id: nanoid(),
@@ -45,7 +65,7 @@ export const projects = [
     url: "https://world-wise-xped.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/WorldWise",
     title: "WorldWise",
-    text: "It is a web application where travelers can track and keep notes of the places they have visited. The application supports Geolocation. User can add and delete cities as they wish.",
+    text: "It is a web application where travelers can track and keep notes of the places they have visited. The application supports Geolocation. Users can add and delete cities as they wish.",
   },
   {
     id: nanoid(),
@@ -53,7 +73,7 @@ export const projects = [
     url: "https://order-your-pizza.netlify.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/order-your-pizza",
     title: "Order Your Pizza",
-    text: "It is a web application where users can order one or more pizzas from a menu. Requires no user account and no login. And payments are made on delivery. This application supports GPS location",
+    text: "It is a web application where users can order one or more pizzas from a menu. Requires no user account and no login. And payments are made on delivery. This application supports GPS location.",
   },
   {
     id: nanoid(),
@@ -61,7 +81,7 @@ export const projects = [
     url: "https://guess-the-number-roan.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Guess-the-number",
     title: "Guess the number",
-    text: "It is a simple guessing game where players can guess a number between 1-20. There is a score option. The player who scores more will win",
+    text: "It is a simple guessing game where players can guess a number between 1-20. There is a score option. The player who scores more will win.",
   },
 
   {
@@ -70,7 +90,7 @@ export const projects = [
     url: "https://get-images-from-api.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Get-Images-From-Api",
     title: "Image Search Engine",
-    text: "This is simple React application users can search their favorite images. The images will show in gallery form.",
+    text: "This is a simple React application where users can search their favorite images. The images will show in gallery form.",
   },
 ];
 
@@ -80,7 +100,7 @@ export const blogPosts = [
     title: "Article Title 1",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
     imageUrl: "https://i.ibb.co/bH9t37d/Worldwise.png",
-    authorImg:"https://i.ibb.co/bH9t37d/Worldwise.png",
+    authorImg: "https://i.ibb.co/bH9t37d/Worldwise.png",
     readTime: "7",
   },
   {
