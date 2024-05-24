@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { links } from "../data";
-import { BsMoonFill, BsSunFill } from "react-icons/bs";
+import { BsMoonFill, BsSunFill, BsList } from "react-icons/bs";
 
 const themes = {
   lemonade: "lemonade",
@@ -13,6 +13,7 @@ const getThemeFromLocalStorage = () => {
 
 const Navbar = () => {
   const [theme, setTheme] = useState(getThemeFromLocalStorage());
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   function handleTheme() {
     const { lemonade, black } = themes;
@@ -25,39 +26,63 @@ const Navbar = () => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(prevState => !prevState);
+  };
+
   return (
-    // md:text-lg sm:text-sm align-element py-4 flex md:justify-content:space-between; flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8
     <nav className="bg-base-200 w-full">
-      <div className="align-element py-4 flex flex-col justify-center sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
-        <h2 className="text-3xl font-bold">
+      <div className="align-element py-4 flex justify-between items-center sm:py-8">
+        {/* Logo */}
+        <h2 className="hidden sm:flex text-3xl font-bold">
           Sho<span>hag</span>
         </h2>
-        <div className="flex justify-center gap-x-4 ">
-          {links.map((link) => {
-            const { id, href, text } = link;
-            return (
+        <div className="flex items-center gap-4">
+          {/* Mobile dropdown menu */}
+          <div className="relative sm:hidden">
+            <button onClick={toggleDropdown}>
+              <BsList className="text-2xl" />
+            </button>
+            {/* Dropdown menu */}
+            {isDropdownOpen && (
+              <div className="absolute top-full left-0 bg-base-200 w-52 shadow-lg rounded-b-lg mt-2">
+                {links.map((link) => (
+                  <a
+                    key={link.id}
+                    href={link.href}
+                    className="block py-2 px-4 text-lg tracking-wide hover:text-emerald-600 duration-300"
+                  >
+                    {link.text}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+          {/* Navigation links for medium and large screens */}
+          <div className="hidden sm:flex gap-x-4">
+            {links.map((link) => (
               <a
-                key={id}
-                href={href}
+                key={link.id}
+                href={link.href}
                 className="capitalize text-lg tracking-wide hover:text-emerald-600 duration-300"
               >
-                {text}
+                {link.text}
               </a>
-            );
-          })}
+            ))}
+          </div>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end flex items-center gap-4">
+          {/* Dark mode icon */}
           <label className="swap swap-rotate">
-            {/* this hidden checkbox controls the state */}
             <input type="checkbox" onChange={handleTheme} />
-            {/* sun icon */}
-            <BsSunFill className="swap-on h-4 w-4" />
-            {/* moon icon */}
-            <BsMoonFill className="swap-off h-4 w-4" />
+            <BsSunFill className="swap-on h-6 w-6" />
+            <BsMoonFill className="swap-off h-6 w-6" />
           </label>
         </div>
       </div>
     </nav>
   );
 };
+
 export default Navbar;
