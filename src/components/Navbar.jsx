@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-base-200 w-full">
-      <div className="align-element py-4 flex justify-between items-center sm:py-8">
+      <div className="align-element py-4 flex justify-between space-x-10 items-center sm:py-8">
         {/* Logo */}
         <h2 className="hidden sm:flex text-3xl font-bold">
           Sho<span>hag</span>
