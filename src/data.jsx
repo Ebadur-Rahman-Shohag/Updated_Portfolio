@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 import { FaHtml5, FaJs, FaNode, FaReact } from "react-icons/fa";
-import { SiMongodb,SiTailwindcss } from "react-icons/si";
+import { SiMongodb, SiTailwindcss } from "react-icons/si";
 
 export const links = [
   { id: nanoid(), href: "#", text: "home" },
@@ -17,7 +17,7 @@ export const skills = [
     icon: <FaHtml5 className="h-16 w-16 text-emerald-500" />,
     text: "Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences.",
   },
-   
+
   {
     id: nanoid(),
     title: "Tailwind CSS",
@@ -82,6 +82,14 @@ export const projects = [
     github: "https://github.com/Ebadur-Rahman-Shohag/Guess-the-number",
     title: "Guess the number",
     text: "It is a simple guessing game where players can guess a number between 1-20. There is a score option. The player who scores more will win.",
+  },
+  {
+    id: nanoid(),
+    img: "https://i.ibb.co.com/PgKmDrR/wild-oasis.png",
+    url: "https://the-wild-oasis-xi-five.vercel.app/",
+    github: "https://github.com/Ebadur-Rahman-Shohag/The-Wild-Oasis",
+    title: "The Wild Oasis",
+    text: "It is a web application where users can book cabins for them. Requires user account and login to book a cabin. Users can update their profile and they can see their reserved cabin list in the reservation area. Users can filter cabins, reserve a cabin, edit a reserved cabin and also delete a reserved cabin. ",
   },
 
   {
