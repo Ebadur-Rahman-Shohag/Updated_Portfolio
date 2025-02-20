@@ -53,11 +53,27 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
+    img: "https://i.ibb.co/sJ3bJTyY/Screenshot-2025-02-20-225918.png",
+    url: "https://home-away-demo.vercel.app/",
+    github: "https://github.com/Ebadur-Rahman-Shohag/Home-Away-Demo",
+    title: "ShopNShare",
+    text: "It is a web application where sellers can post their products and buyers can buy the products.This application supports user authentication, product filtering, reviews, and online payment. Admin can see the total booking and total users in the admin panel.",
+  },
+  {
+    id: nanoid(),
     img: "https://i.ibb.co/qNm9qc6/comfy.png",
     url: "https://comfy-ten.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Comfy",
     title: "comfy store",
     text: "This is an E-Commerce web application where users can order furniture. This application requires a user account and login and payments are made on delivery. Users can also explore the web application by demo log in. Users can see their data in the order page. Also this application has a filtering method and dark mode.",
+  },
+  {
+    id: nanoid(),
+    img: "https://i.ibb.co.com/PgKmDrR/wild-oasis.png",
+    url: "https://the-wild-oasis-xi-five.vercel.app/",
+    github: "https://github.com/Ebadur-Rahman-Shohag/The-Wild-Oasis",
+    title: "The Wild Oasis",
+    text: "It is a web application where users can book cabins for them. Requires user account and login to book a cabin. Users can update their profile and they can see their reserved cabin list in the reservation area. Users can filter cabins, reserve a cabin, edit a reserved cabin and also delete a reserved cabin. ",
   },
   {
     id: nanoid(),
@@ -83,56 +99,43 @@ export const projects = [
     title: "Guess the number",
     text: "It is a simple guessing game where players can guess a number between 1-20. There is a score option. The player who scores more will win.",
   },
-  {
-    id: nanoid(),
-    img: "https://i.ibb.co.com/PgKmDrR/wild-oasis.png",
-    url: "https://the-wild-oasis-xi-five.vercel.app/",
-    github: "https://github.com/Ebadur-Rahman-Shohag/The-Wild-Oasis",
-    title: "The Wild Oasis",
-    text: "It is a web application where users can book cabins for them. Requires user account and login to book a cabin. Users can update their profile and they can see their reserved cabin list in the reservation area. Users can filter cabins, reserve a cabin, edit a reserved cabin and also delete a reserved cabin. ",
-  },
 
-  {
-    id: nanoid(),
-    img: "https://i.ibb.co/ChbYBDK/image-search.png",
-    url: "https://get-images-from-api.vercel.app/",
-    github: "https://github.com/Ebadur-Rahman-Shohag/Get-Images-From-Api",
-    title: "Image Search Engine",
-    text: "This is a simple React application where users can search their favorite images. The images will show in gallery form.",
-  },
+
+
 ];
 
-export const blogPosts = [
-  {
-    id: nanoid(),
-    title: "Article Title 1",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
-    imageUrl: "https://i.ibb.co/bH9t37d/Worldwise.png",
-    authorImg: "https://i.ibb.co/bH9t37d/Worldwise.png",
-    readTime: "7",
-  },
-  {
-    id: nanoid(),
-    title: "Article Title 2",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
-    imageUrl: "./images/project-2.jpeg",
-    authorImg: "https://i.ibb.co/bH9t37d/Worldwise.png",
-    readTime: "7",
-  },
-  {
-    id: nanoid(),
-    title: "Article Title 3",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
-    imageUrl: "./images/project-3.jpeg",
-    authorImg: "./images/hero-img-small.jpeg",
-    readTime: "7",
-  },
-  {
-    id: nanoid(),
-    title: "Article Title 4",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
-    imageUrl: "./images/project-4.jpeg",
-    authorImg: "./images/hero-img-small.jpeg",
-    readTime: "7",
-  },
-];
+// export const blogPosts = [
+//   {
+//     id: nanoid(),
+//     title: "Article Title 1",
+//     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
+//     imageUrl: "https://i.ibb.co/bH9t37d/Worldwise.png",
+//     authorImg: "https://i.ibb.co/bH9t37d/Worldwise.png",
+//     readTime: "7",
+//   },
+//   {
+//     id: nanoid(),
+//     title: "Article Title 2",
+//     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
+//     imageUrl: "./images/project-2.jpeg",
+//     authorImg: "https://i.ibb.co/bH9t37d/Worldwise.png",
+//     readTime: "7",
+//   },
+//   {
+//     id: nanoid(),
+//     title: "Article Title 3",
+//     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
+//     imageUrl: "./images/project-3.jpeg",
+//     authorImg: "./images/hero-img-small.jpeg",
+//     readTime: "7",
+//   },
+//   {
+//     id: nanoid(),
+//     title: "Article Title 4",
+//     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
+//     imageUrl: "./images/project-4.jpeg",
+//     authorImg: "./images/hero-img-small.jpeg",
+//     readTime: "7",
+//   },
+// ];
+
