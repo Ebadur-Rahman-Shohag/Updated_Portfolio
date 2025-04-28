@@ -12,15 +12,6 @@ const Projects = () => {
   return (
     <section className='py-20 align-element' id='projects'>
       <SectionTitle text='web creations' />
-      {/* tabs */}
-      <div>
-        <ul className='flex justify-center gap-4'>
-          <li className='border-b border-gray-300 py-2 px-4 hover:border-gray-500 hover:text-gray-500 cursor-pointer'>All</li>
-          <li className='border-b border-gray-300 py-2 px-4 hover:border-gray-500 hover:text-gray-500 cursor-pointer'>Web</li>
-          <li className='border-b border-gray-300 py-2 px-4 hover:border-gray-500 hover:text-gray-500 cursor-pointer'>Mobile</li>
-          <li className='border-b border-gray-300 py-2 px-4 hover:border-gray-500 hover:text-gray-500 cursor-pointer'>UI/UX</li>
-        </ul>
-      </div>
       <div className='py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-8'>
         {projectsToRender.map((project) => {
           return <ProjectsCard key={project.id} {...project} />;
