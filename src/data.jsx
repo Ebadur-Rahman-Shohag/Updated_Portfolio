@@ -53,6 +53,7 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
+    category: "React",
     img: "https://i.ibb.co/sJ3bJTyY/Screenshot-2025-02-20-225918.png",
     url: "https://home-away-demo.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Home-Away-Demo",
@@ -61,6 +62,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "React",
     img: "https://i.ibb.co/qNm9qc6/comfy.png",
     url: "https://comfy-ten.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Comfy",
@@ -69,6 +71,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "React",
     img: "https://i.ibb.co.com/PgKmDrR/wild-oasis.png",
     url: "https://the-wild-oasis-xi-five.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/The-Wild-Oasis",
@@ -77,6 +80,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "React",
     img: "https://i.ibb.co/bH9t37d/Worldwise.png",
     url: "https://world-wise-xped.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/WorldWise",
@@ -85,6 +89,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "React",
     img: "https://i.ibb.co/1sXrnpn/pizza-order.png",
     url: "https://order-your-pizza.netlify.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/order-your-pizza",
@@ -93,6 +98,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "React",
     img: "https://i.ibb.co/QCtmCPG/guess-the-number.png",
     url: "https://guess-the-number-roan.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Guess-the-number",
@@ -101,6 +107,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "JavaScript",
     img: "https://i.ibb.co.com/4RC5xkqk/english-janala.png",
     url: "https://english-janala-alpha.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/English-Janala",
@@ -109,6 +116,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "JavaScript",
     img: "https://i.ibb.co.com/p61gdkd5/code-clarified.png",
     url: "https://code-clarified.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/CodeClarified",
@@ -117,6 +125,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "JavaScript",
     img: "https://i.ibb.co.com/rKcYxbFv/auction-gallery.png",
     url: "https://auction-gallery-omega.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Auction-Gallery",
@@ -125,6 +134,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "JavaScript",
     img: "https://i.ibb.co.com/fdxG6mD7/bookmark-manager.png",
     url: "https://bookmark-manager-nu.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Bookmark-Manager",
@@ -133,6 +143,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "JavaScript",
     img: "https://i.ibb.co.com/6c9rg89C/simple-blog.png",
     url: "https://simple-blog-eight-eta.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/simple-blog",
@@ -141,6 +152,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "JavaScript",
     img: "https://i.ibb.co.com/zhnXVNxy/ph-tube.png",
     url: "https://ph-tube-mu-gold.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Ph-Tube",
@@ -149,6 +161,7 @@ export const projects = [
   },
   {
     id: nanoid(),
+    category: "JavaScript",
     img: "https://i.ibb.co.com/C5kpxfsM/dev-board.png",
     url: "https://assignment-05-lyart.vercel.app/",
     github: "https://github.com/Ebadur-Rahman-Shohag/Assignment-05",
@@ -159,6 +172,8 @@ export const projects = [
 
 
 ];
+
+export const category = ["All", "JavaScript", "React"];
 
 // export const blogPosts = [
 //   {
