@@ -1,9 +1,21 @@
 import { FaGithubSquare } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
+import { motion } from "motion/react";
 
 const ProjectsCard = ({ url, img, github, title, text }) => {
   return (
-    <article className=" bg-white mb-4 rounded-lg shadow-md hover:shadow-xl duration-300 relative z-0  transition-all hover:scale-110">
+    <motion.article
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      // animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.4,
+        scale: { type: "spring", visualDuration: 0.4, bounce: 0.2 },
+      }}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.8 }}
+      className=" bg-white mb-4 rounded-lg shadow-md hover:shadow-xl "
+    >
       <img
         src={img}
         alt={title}
@@ -21,7 +33,7 @@ const ProjectsCard = ({ url, img, github, title, text }) => {
           </a>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
 export default ProjectsCard;
