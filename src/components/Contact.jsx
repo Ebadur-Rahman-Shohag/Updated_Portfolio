@@ -96,14 +96,15 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className=" max-w-md mx-auto my-8">
+
+    <div id="contact" className="max-w-md mx-auto my-8">
       <h1 className="border-b pb-5 text-3xl font-semibold text-center mb-4">
         Get in Touch
       </h1>
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mt-8 mb-4"
+        className="bg-transparent border border-gray-200 shadow-md rounded px-8 pt-6 pb-8 mt-8 mb-4"
       >
         <div className="mb-4">
           <label
@@ -158,17 +159,20 @@ function Contact() {
             required
           />
         </div>
-        <button
-          className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${formSubmitted && "opacity-50 cursor-not-allowed"
-            }`}
-          type="submit"
-          value="Send"
-          disabled={formSubmitted}
-        >
-          {formSubmitted ? "Message Sent" : "Send Message"}
-        </button>
+        <div className="text-center">
+          <button
+            className={`bg-base-300 shadow-lg hover:shadow-sm hover:bg-[#8b918d]  text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${formSubmitted && "opacity-50 cursor-not-allowed"
+              }`}
+            type="submit"
+            value="Send"
+            disabled={formSubmitted}
+          >
+            {formSubmitted ? "Message Sent" : "Send Message"}
+          </button>
+        </div>
       </form>
     </div>
+
   );
 }
 

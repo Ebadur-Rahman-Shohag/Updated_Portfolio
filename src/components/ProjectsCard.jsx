@@ -14,7 +14,7 @@ const ProjectsCard = ({ url, img, github, title, text }) => {
       }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.8 }}
-      className=" bg-white mb-4 rounded-lg shadow-md hover:shadow-xl "
+      className=" bg-base-100 border border-gray-300 mb-4 rounded-lg shadow-md hover:shadow-xl "
     >
       <img
         src={img}
